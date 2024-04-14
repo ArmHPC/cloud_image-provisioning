@@ -65,5 +65,7 @@ if [ $# -ne 4 ]; then
     exit 1
 fi
 
+mkdir -p ../images
+
 # Call the function to create Packer template file
 create_packer_template "$1" "$2" "$3" "$4"
